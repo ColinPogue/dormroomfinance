@@ -5,22 +5,18 @@ url: "/about/"
 summary: "About Dorm Room Finance and Colin"
 ---
 
-Hey — I'm Colin, a 21-year-old junior studying business in New Orleans.
+I'm Colin — junior at Tulane, studying business.
 
-I started Dorm Room Finance because I was frustrated. I'd search for advice on things like "should I get a credit card in college" or "how do I actually start investing with $200" and every result was either written by a 45-year-old financial advisor or so dumbed down it was useless.
+I started this site because most personal finance content is either written for 40-year-olds or treats college students like they can't handle a real explanation. Neither is useful when you're trying to figure out your first credit card or whether a Roth IRA is actually worth opening at 20.
 
-So I started writing it myself.
-
-Everything on this site comes from real questions I've had, real mistakes I've made, and real things I've learned being a broke college student trying to build a financial foundation before graduation.
-
-I'm not a financial advisor. I'm just a business student who reads too much about money and wants to share what's actually useful for people in our situation.
+I'm not a financial advisor. I'm a business student who's made some decent financial decisions and some bad ones, and I write about both.
 
 Topics I cover:
-- **Credit cards** — which ones are actually worth it for students, how to build credit from zero
-- **Investing** — how to start with small amounts, Roth IRAs, index funds explained simply
-- **Budgeting** — realistic systems for living on a student budget
-- **Side hustles** — what actually makes money in college, what's a waste of time
-- **Student loans** — understanding what you owe and how to think about it
+- **Credit cards** — which ones are worth it for students, how to build credit from zero
+- **Investing** — getting started with small amounts, Roth IRAs, index funds
+- **Budgeting** — realistic systems for a student budget
+- **Side hustles** — what actually makes money in college
+- **Student loans** — understanding what you owe and how to think about repayment
 - **First job finances** — what to do with your first real paycheck
 
-If you have a question you want me to cover, email me at cpogue208@gmail.com.
+Questions or topics you want covered: cpogue208@gmail.com.
