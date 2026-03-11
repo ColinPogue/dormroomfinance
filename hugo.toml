@@ -2,7 +2,7 @@ baseURL = "https://dormroomfinance.com/"
 languageCode = "en-us"
 title = "Dorm Room Finance"
 theme = "PaperMod"
-paginate = 10
+paginate = 5
 
 [params]
   env = "production"
@@ -22,8 +22,8 @@ paginate = 10
   tocopen = false
 
   [params.homeInfoParams]
-    Title = "Hey, I'm Colin 👋"
-    Content = "I'm a 21-year-old junior at a business school in New Orleans, and I started this site because nobody teaches you about money in college. I'm figuring it out as I go — credit cards, investing, budgeting on a student budget — and writing it all down so you don't have to start from scratch."
+    Title = "Real money advice for college students."
+    Content = "No jargon, no fluff. Just what you actually need to know about credit, investing, budgeting, and building a financial foundation before graduation — written by a business student figuring it out in real time."
 
   [[params.socialIcons]]
     name = "email"
@@ -35,15 +35,25 @@ paginate = 10
 
 [menu]
   [[menu.main]]
-    identifier = "categories"
-    name = "Topics"
-    url = "/categories/"
+    identifier = "articles"
+    name = "Articles"
+    url = "/articles/"
     weight = 10
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 30
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "mailto:cpogue208@gmail.com"
+    weight = 40
 
 [markup]
   [markup.goldmark]

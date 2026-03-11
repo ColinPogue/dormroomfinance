@@ -1,0 +1,45 @@
+{{- define "main" }}
+
+<header class="page-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">{{ .Description }}</div>
+    {{- end }}
+</header>
+
+{{- $pages := .Pages }}
+{{- $paginator := .Paginate $pages }}
+
+{{- if eq (len $pages) 0 }}
+<div class="no-articles">
+    <p>No articles published in this category yet — check back soon.</p>
+</div>
+{{- else }}
+{{- range $paginator.Pages }}
+<article class="post-entry">
+    <header class="entry-header">
+        <h2>{{- .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+        {{- if .Params.description }}
+        <p>{{ .Params.description }}</p>
+        {{- else }}
+        <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        {{- end }}
+    </div>
+    {{- end }}
+    <footer class="entry-footer">
+        {{- partial "post_meta.html" . -}}
+    </footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+{{- end }}
+
+<div class="back-to-categories">
+    <a href="/categories/" class="back-btn">← Back to all categories</a>
+</div>
+
+{{- end }}{{- /* end main */ -}}

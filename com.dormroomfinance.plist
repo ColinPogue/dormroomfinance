@@ -7,19 +7,19 @@
     <key>ProgramArguments</key>
     <array>
         <string>/usr/bin/python3</string>
-        <string>/Users/cgardner/Desktop/DormRoomFinance/automation/main.py</string>
+        <string>/Users/cgardner/Projects/DormRoomFinance/automation/main.py</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>9</integer>
+        <integer>4</integer>
         <key>Minute</key>
         <integer>0</integer>
     </dict>
     <key>StandardOutPath</key>
-    <string>/Users/cgardner/Desktop/DormRoomFinance/automation/run.log</string>
+    <string>/Users/cgardner/Projects/DormRoomFinance/automation/run.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/cgardner/Desktop/DormRoomFinance/automation/error.log</string>
+    <string>/Users/cgardner/Projects/DormRoomFinance/automation/error.log</string>
     <key>RunAtLoad</key>
     <false/>
 </dict>

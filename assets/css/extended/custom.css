@@ -1,0 +1,380 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f4f1;
+}
+
+/* ===== HEADER / BANNER ===== */
+.header {
+    background: linear-gradient(135deg, #1a4731 0%, #2d6a4f 100%);
+    padding: 0 0;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    padding: 14px 0;
+}
+
+.logo a, .logo a:visited {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.3px;
+}
+
+.logo a:hover {
+    color: #a8d8b5 !important;
+    text-decoration: none;
+}
+
+.nav a, .nav a:visited {
+    color: rgba(255,255,255,0.85) !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.nav a:hover {
+    background: rgba(255,255,255,0.18) !important;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+#theme-toggle svg, #search-trigger svg {
+    fill: rgba(255,255,255,0.8);
+    stroke: rgba(255,255,255,0.8);
+}
+
+/* ===== HOMEPAGE INTRO SECTION ===== */
+.home-info {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.75rem 2rem;
+    margin: 1.75rem 0 1.5rem 0;
+    border-left: 5px solid #2d6a4f;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.home-info .entry-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #1a4731;
+    margin-bottom: 0.5rem;
+}
+
+.home-info .entry-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ===== ARTICLE CARDS ===== */
+.post-entry {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07) !important;
+    padding: 1.5rem 1.75rem !important;
+    margin-bottom: 1.1rem !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-left-color 0.15s ease;
+    border-left: 4px solid transparent !important;
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.11) !important;
+    border-left-color: #2d6a4f !important;
+}
+
+.entry-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a202c;
+    line-height: 1.45;
+    margin-bottom: 0.4rem;
+}
+
+.entry-header h2 a, .entry-header h2 a:visited {
+    color: #1a202c !important;
+}
+
+.entry-header h2 a:hover {
+    color: #2d6a4f !important;
+}
+
+.entry-content p {
+    color: #4a5568;
+    font-size: 0.93rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+.entry-footer {
+    color: #718096 !important;
+    font-size: 0.8rem !important;
+    margin-top: 0.75rem;
+}
+
+.entry-footer a {
+    color: #718096 !important;
+}
+
+/* Category pill badges */
+.post-categories a, .post-tags a {
+    background: #e8f5ee !important;
+    color: #1a4731 !important;
+    padding: 2px 10px !important;
+    border-radius: 20px !important;
+    font-size: 0.73rem !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    letter-spacing: 0.3px;
+}
+
+.post-categories a:hover, .post-tags a:hover {
+    background: #c8e6d0 !important;
+}
+
+/* ===== ARTICLE PAGE ===== */
+.post-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: #1a202c !important;
+    line-height: 1.3 !important;
+}
+
+.post-meta {
+    color: #718096;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #e2e8e0;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-content {
+    font-size: 1.05rem !important;
+    line-height: 1.82 !important;
+    color: #2d3748;
+}
+
+.post-content h2 {
+    font-family: 'Playfair Display', serif;
+    color: #1a4731;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e8f5ee;
+    padding-bottom: 0.4rem;
+    margin-top: 2.5rem;
+}
+
+.post-content h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2d3748;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.post-content a {
+    color: #2d6a4f;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.post-content a:hover {
+    color: #1a4731;
+}
+
+.post-content strong {
+    color: #1a202c;
+}
+
+.post-content hr {
+    border: none;
+    border-top: 1px solid #e2e8e0;
+    margin: 2rem 0;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main {
+    max-width: 860px;
+}
+
+/* ===== PAGE HEADERS (categories, tags, archive) ===== */
+.page-header h1 {
+    font-family: 'Playfair Display', serif;
+    color: #1a4731;
+    font-size: 1.8rem;
+}
+
+/* ===== BREADCRUMBS ===== */
+.breadcrumbs span a {
+    color: #2d6a4f !important;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #1a4731;
+    color: rgba(255,255,255,0.65);
+    border-top: none;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+}
+
+.footer a, .footer a:visited {
+    color: rgba(255,255,255,0.85) !important;
+}
+
+.footer a:hover {
+    color: #ffffff !important;
+}
+
+/* ===== SEARCH ===== */
+#searchbox input {
+    border: 2px solid #2d6a4f !important;
+    border-radius: 8px;
+}
+
+/* ===== EMAIL CTA (homepage) ===== */
+.email-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #2d6a4f;
+    color: #ffffff !important;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background 0.2s;
+    margin-top: 0.25rem;
+}
+
+.email-cta:hover {
+    background: #1a4731;
+    color: #ffffff !important;
+}
+
+.email-cta svg {
+    flex-shrink: 0;
+}
+
+/* ===== CATEGORIES GRID ===== */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.category-card {
+    display: block;
+    text-decoration: none !important;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border: 1px solid #e8f0eb;
+    border-top: 4px solid #2d6a4f;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    overflow: hidden;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.11);
+    text-decoration: none !important;
+}
+
+.category-card-inner {
+    padding: 1.4rem 1.5rem 1.2rem;
+}
+
+.category-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 0.5rem 0;
+}
+
+.category-desc {
+    font-size: 0.88rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+}
+
+.category-count {
+    display: inline-block;
+    background: #e8f5ee;
+    color: #1a4731;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.3px;
+}
+
+/* ===== BACK TO CATEGORIES BUTTON ===== */
+.back-to-categories {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8e0;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #2d6a4f !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+    padding: 8px 16px;
+    border: 2px solid #2d6a4f;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+    background: #2d6a4f;
+    color: #ffffff !important;
+}
+
+/* ===== EMPTY CATEGORY STATE ===== */
+.no-articles {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    color: #718096;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 2px dashed #c8e6d0;
+}
+
+/* ===== TOC ===== */
+.toc {
+    background: #f0f7f3;
+    border: 1px solid #c8e6d0;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+}
+
+.toc-title {
+    color: #1a4731;
+    font-weight: 700;
+}

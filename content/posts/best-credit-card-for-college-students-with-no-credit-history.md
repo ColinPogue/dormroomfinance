@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Best Credit Cards for College Students With No Credit History (2026)"
 date: 2026-03-11T00:48:35+00:00
@@ -28,7 +27,7 @@ I know, I know. You're busy. You've got exams, you're surviving on ramen and din
 
 But here's the thing — the length of your credit history is one of the factors that goes into your credit score. Every month you wait is a month you're not building that history. Starting at 19 or 20 puts you way ahead of people who wait until they're 25 and suddenly need a car loan.
 
-You don't need to go crazy with it. One card, used responsibly, is enough to get the ball rolling. [Related: how credit scores actually work for students](/posts/how-credit-scores-work-for-students/)
+You don't need to go crazy with it. One card, used responsibly, is enough to get the ball rolling. Related: how credit scores actually work for students
 
 ---
 
@@ -66,7 +65,7 @@ There's no annual fee and no foreign transaction fee. If I were starting fresh t
 
 This one is super straightforward — 1.5% cash back on every purchase, no rotating categories to track, no annual fee. If you're the kind of person who forgets to activate quarterly bonuses (guilty), this flat-rate card is low-maintenance and still earns you something.
 
-Capital One also offers a tool called CreditWise that lets you monitor your credit score for free. As someone who checks his score way more than is probably healthy, that's a nice bonus. [Related: best free apps to track your credit score](/posts/free-credit-score-apps-for-students/)
+Capital One also offers a tool called CreditWise that lets you monitor your credit score for free. As someone who checks his score way more than is probably healthy, that's a nice bonus. Related: best free apps to track your credit score
 
 ### 3. Chase Freedom® Student Credit Card
 
@@ -129,4 +128,3 @@ The most important thing isn't which card you pick. It's that you pay it off eve
 ---
 
 *I'm not a financial advisor — just a business student sharing what I've learned. Always do your own research before making financial decisions.*
-```

@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How to Build Credit in College From Scratch (Even If You're Dead Broke)"
 date: 2026-03-11T12:24:46+00:00
@@ -118,7 +117,7 @@ You can have a decent credit score — think 680-720 — within 12-18 months of 
 
 That sounds slow, but think about it this way: if you open a card right now as a sophomore, you could have a legitimately strong credit score by the time you graduate. That's a leg up most people don't have at 22.
 
-For more on managing money during school, check out our guide on [budgeting for college students](/posts/college-budgeting-guide/) and [the best student bank accounts](/posts/best-student-bank-accounts/).
+For more on managing money during school, check out our guide on budgeting for college students and the best student bank accounts.
 
 ---
 
@@ -141,4 +140,3 @@ Future you — the one trying to rent an apartment or qualify for a car loan at 
 ---
 
 > **Disclaimer:** I'm not a financial advisor — just a business student sharing what I've learned. Always do your own research before making financial decisions.
-```

@@ -48,7 +48,6 @@ REQUIREMENTS:
 - Actionable takeaways
 - Where naturally relevant, mention real products/services (credit cards, apps, brokerages) — these will be affiliate links
 - End with a clear "Bottom Line" or "TL;DR" section
-- Internal link placeholders like [related article](/posts/related-slug/) where relevant
 
 Write the complete article now, starting with the front matter.
 """
@@ -59,6 +58,10 @@ Write the complete article now, starting with the front matter.
         messages=[{"role": "user", "content": prompt}],
     )
 
-    content = message.content[0].text
+    content = message.content[0].text.strip()
+    # Strip markdown code fences if Claude wraps the output
+    if content.startswith("```"):
+        content = re.sub(r"^```[a-z]*\n", "", content)
+        content = re.sub(r"\n```$", "", content)
     slug = slugify(keyword)
     return content, slug, keyword, category

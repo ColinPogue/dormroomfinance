@@ -1,0 +1,31 @@
+- name: "Credit Cards"
+  slug: "credit-cards"
+  description: "Which cards are actually worth it for students, how to build credit from zero, and how to avoid the traps."
+
+- name: "Investing"
+  slug: "investing"
+  description: "How to start investing with small amounts, Roth IRAs, index funds, and compound interest — explained without the jargon."
+
+- name: "Budgeting"
+  slug: "budgeting"
+  description: "Realistic systems for living on a student budget — tracking expenses, cutting costs, and actually sticking to a plan."
+
+- name: "Side Hustles"
+  slug: "side-hustles"
+  description: "What actually makes money in college, what's a waste of time, and how to turn a skill into real income."
+
+- name: "Student Loans"
+  slug: "student-loans"
+  description: "Understanding what you owe, the difference between federal and private loans, repayment options, and forgiveness programs."
+
+- name: "First Job Finances"
+  slug: "first-job-finances"
+  description: "What to do with your first real paycheck — 401k, taxes, salary negotiation, and building an emergency fund before graduation."
+
+- name: "Banking"
+  slug: "banking"
+  description: "No-fee accounts, high-yield savings, online vs. traditional banks, and how to stop losing money on ATM fees."
+
+- name: "Saving Money"
+  slug: "saving-money"
+  description: "Student discounts, cheap textbooks, meal prep, subscriptions worth keeping, and every other way to stretch a tight budget."
