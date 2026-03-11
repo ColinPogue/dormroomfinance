@@ -71,11 +71,15 @@ def main():
         progress = json.load(f)
     total = progress["total_articles"]
 
+    mark_ran_today()
+
     # Step 5: Send notification
     print("Sending email notification...")
-    send_notification(keyword, category, result, total)
+    try:
+        send_notification(keyword, category, result, total)
+    except Exception as e:
+        print(f"  WARNING: Notification failed: {e}")
 
-    mark_ran_today()
     print(f"=== Done. Article #{total} published. ===")
 
 
