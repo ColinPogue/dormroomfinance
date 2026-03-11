@@ -11,6 +11,7 @@ Runs daily via launchd:
 import json
 import os
 import sys
+from datetime import date
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -22,9 +23,28 @@ from article_writer import write_article
 from publisher import publish_article
 from notifier import send_notification
 
+LAST_RUN_FILE = os.path.join(os.path.dirname(__file__), "last_run.json")
+
+
+def already_ran_today():
+    if not os.path.exists(LAST_RUN_FILE):
+        return False
+    with open(LAST_RUN_FILE) as f:
+        data = json.load(f)
+    return data.get("last_run_date") == str(date.today())
+
+
+def mark_ran_today():
+    with open(LAST_RUN_FILE, "w") as f:
+        json.dump({"last_run_date": str(date.today())}, f)
+
 
 def main():
     print("=== DormRoomFinance Daily Run ===")
+
+    if already_ran_today():
+        print("Already ran today — skipping.")
+        return
 
     # Step 1: Pick keyword
     print("Picking next keyword...")
@@ -55,6 +75,7 @@ def main():
     print("Sending email notification...")
     send_notification(keyword, category, result, total)
 
+    mark_ran_today()
     print(f"=== Done. Article #{total} published. ===")
 
 
