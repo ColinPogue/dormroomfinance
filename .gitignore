@@ -1,3 +1,7 @@
 .env
 public/
 resources/
+.hugo_build.lock
+automation/run.log
+automation/error.log
+automation/last_run.json
