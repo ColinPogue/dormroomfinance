@@ -1,0 +1,21 @@
+{
+  "amazon_associate_id": "REPLACE_WITH_YOUR_ID",
+  "amazon_base_url": "https://www.amazon.com/dp/",
+  "affiliate_programs": {
+    "credit_cards": {
+      "chase_freedom": "https://creditcards.chase.com/cash-back-credit-cards/freedom/student",
+      "discover_student": "https://www.discover.com/credit-cards/student/",
+      "capital_one_savor": "https://www.capitalone.com/credit-cards/savor-one-student/"
+    },
+    "investing": {
+      "robinhood": "https://join.robinhood.com",
+      "fidelity": "https://www.fidelity.com",
+      "acorns": "https://www.acorns.com"
+    },
+    "banking": {
+      "chime": "https://www.chime.com",
+      "ally": "https://www.ally.com"
+    }
+  },
+  "link_disclosure": "This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use."
+}

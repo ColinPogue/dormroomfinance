@@ -1,0 +1,53 @@
+baseURL = "https://dormroomfinance.com/"
+languageCode = "en-us"
+title = "Dorm Room Finance"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  title = "Dorm Room Finance"
+  description = "Real money advice from a real college student. Budgeting, investing, credit cards, and side hustles — written by a 21-year-old junior figuring it out."
+  keywords = ["college finance", "student money", "budgeting in college", "investing for college students", "student credit cards"]
+  author = "Colin"
+  DateFormat = "January 2, 2006"
+  defaultTheme = "light"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "Hey, I'm Colin 👋"
+    Content = "I'm a 21-year-old junior at a business school in New Orleans, and I started this site because nobody teaches you about money in college. I'm figuring it out as I go — credit cards, investing, budgeting on a student budget — and writing it all down so you don't have to start from scratch."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:cpogue208@gmail.com"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "Topics"
+    url = "/categories/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
