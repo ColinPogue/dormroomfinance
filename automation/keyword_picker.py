@@ -1,5 +1,6 @@
 import json
 import os
+import random
 
 KEYWORDS_FILE = os.path.join(os.path.dirname(__file__), "keywords.json")
 PROGRESS_FILE = os.path.join(os.path.dirname(__file__), "progress.json")
@@ -13,16 +14,18 @@ def pick_next_keyword():
     with open(PROGRESS_FILE) as f:
         progress = json.load(f)
 
-    next_index = progress["last_index"] + 1
+    completed = set(progress.get("completed", []))
+    remaining = [k for k in keywords if k["keyword"] not in completed]
 
-    if next_index >= len(keywords):
-        # Cycled through all keywords — start over
-        next_index = 0
+    # If all keywords used, start over
+    if not remaining:
+        completed = set()
+        remaining = keywords
+        progress["completed"] = []
 
-    keyword_entry = keywords[next_index]
+    keyword_entry = random.choice(remaining)
 
     # Update progress
-    progress["last_index"] = next_index
     progress["completed"].append(keyword_entry["keyword"])
     progress["total_articles"] += 1
 
