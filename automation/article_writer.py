@@ -42,13 +42,14 @@ CATEGORY: {category}
 REQUIREMENTS:
 - Length: 1,200-1,500 words
 - Format: Hugo-compatible Markdown
-- Include a Hugo front matter block at the very top with: title, date ({datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00')}), description (SEO meta description, 150-160 chars), categories (["{category}"], tags (3-5 relevant tags), draft: false
-- H2 and H3 subheadings throughout
-- At least one personal anecdote or relatable student moment
-- Actionable takeaways
+- Include a Hugo front matter block at the very top with: title, date ({datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00')}), description (SEO meta description, 150-160 chars), categories (["{category}"]), tags (3-5 relevant tags), draft: false
+- Use H2 subheadings only (no H3). Maximum 4 subheadings in the whole article
+- Do NOT put a horizontal rule (---) between every section. Use them sparingly or not at all
+- No hyphens or em dashes anywhere in the article text. Rewrite any sentence that would need one
+- At least one specific personal story or moment
 - Where naturally relevant, mention real products/services (credit cards, apps, brokerages) — these will be affiliate links
-- End with a clear "Bottom Line" or "TL;DR" section
-- After the Bottom Line, add a "## Frequently Asked Questions" section with 3-4 short Q&As directly related to the topic. Format each as "**Q: [question]**" followed by a 2-3 sentence answer on the next line.
+- End with a short "Bottom Line" section that is 2-3 sentences max, not a bulleted list
+- After the Bottom Line, add a "## Frequently Asked Questions" section with 3 short Q&As. Format each as "**Q: [question]**" followed by a 2-3 sentence answer
 
 Write the complete article now, starting with the front matter.
 """

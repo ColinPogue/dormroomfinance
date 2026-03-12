@@ -61,3 +61,6 @@ paginate = 5
       unsafe = true
   [markup.highlight]
     noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 2
