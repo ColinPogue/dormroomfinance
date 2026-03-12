@@ -1,0 +1,30 @@
+{{- if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ .Params.description | default .Summary | plainify | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "Colin Pogue",
+    "url": "https://dormroomfinance.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dorm Room Finance",
+    "url": "https://dormroomfinance.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dormroomfinance.com/favicon-32x32.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{- end }}

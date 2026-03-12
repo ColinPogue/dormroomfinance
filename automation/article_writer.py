@@ -48,6 +48,7 @@ REQUIREMENTS:
 - Actionable takeaways
 - Where naturally relevant, mention real products/services (credit cards, apps, brokerages) — these will be affiliate links
 - End with a clear "Bottom Line" or "TL;DR" section
+- After the Bottom Line, add a "## Frequently Asked Questions" section with 3-4 short Q&As directly related to the topic. Format each as "**Q: [question]**" followed by a 2-3 sentence answer on the next line.
 
 Write the complete article now, starting with the front matter.
 """
