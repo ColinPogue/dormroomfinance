@@ -7,7 +7,7 @@ paginate = 5
 [params]
   env = "production"
   title = "Dorm Room Finance"
-  description = "Real money advice from a real college student. Budgeting, investing, credit cards, and side hustles — written by a 21-year-old junior figuring it out."
+  description = "Real money advice from a real college student. Budgeting, investing, credit cards, and side hustles — written by a business student figuring it out."
   keywords = ["college finance", "student money", "budgeting in college", "investing for college students", "student credit cards"]
   author = "Colin"
   DateFormat = "January 2, 2006"

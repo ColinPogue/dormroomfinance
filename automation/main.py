@@ -2,10 +2,11 @@
 """
 DormRoomFinance Automation
 Runs daily via launchd:
-1. Picks next keyword from list
-2. Writes article via Claude API
-3. Publishes to GitHub (triggers GitHub Pages rebuild)
-4. Sends email notification
+1. Validates environment
+2. Picks next keyword from list
+3. Writes article via Claude API (with retry)
+4. Publishes to GitHub
+5. Sends email notification
 """
 
 import json
@@ -18,12 +19,29 @@ from dotenv import load_dotenv
 env_path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(env_path)
 
-from keyword_picker import pick_next_keyword
+from keyword_picker import pick_next_keyword, mark_keyword_complete
 from article_writer import write_article
 from publisher import publish_article
-from notifier import send_notification
+from notifier import send_notification, send_failure_notification
 
 LAST_RUN_FILE = os.path.join(os.path.dirname(__file__), "last_run.json")
+
+REQUIRED_ENV_VARS = [
+    "ANTHROPIC_API_KEY",
+    "GITHUB_TOKEN",
+    "GITHUB_USERNAME",
+    "GITHUB_REPO",
+    "GMAIL_ADDRESS",
+    "GMAIL_APP_PASSWORD",
+    "NOTIFICATION_EMAIL",
+]
+
+
+def validate_env():
+    missing = [v for v in REQUIRED_ENV_VARS if not os.environ.get(v)]
+    if missing:
+        print(f"ERROR: Missing required environment variables: {', '.join(missing)}")
+        sys.exit(1)
 
 
 def already_ran_today():
@@ -42,45 +60,57 @@ def mark_ran_today():
 def main():
     print("=== DormRoomFinance Daily Run ===")
 
+    validate_env()
+
     if already_ran_today():
         print("Already ran today — skipping.")
         return
 
-    # Step 1: Pick keyword
-    print("Picking next keyword...")
-    keyword_entry = pick_next_keyword()
-    print(f"  Keyword: {keyword_entry['keyword']}")
-    print(f"  Category: {keyword_entry['category']}")
+    keyword_entry = None
+    progress = None
 
-    # Step 2: Write article
-    print("Writing article with Claude...")
-    content, slug, keyword, category = write_article(keyword_entry)
-    print(f"  Article written: {slug}")
-
-    # Step 3: Publish to GitHub
-    print("Publishing to GitHub...")
-    success, result = publish_article(content, slug)
-    if not success:
-        print(f"  ERROR publishing: {result}")
-        sys.exit(1)
-    print(f"  Published: {result}")
-
-    # Step 4: Get total article count
-    progress_file = os.path.join(os.path.dirname(__file__), "progress.json")
-    with open(progress_file) as f:
-        progress = json.load(f)
-    total = progress["total_articles"]
-
-    mark_ran_today()
-
-    # Step 5: Send notification
-    print("Sending email notification...")
     try:
-        send_notification(keyword, category, result, total)
-    except Exception as e:
-        print(f"  WARNING: Notification failed: {e}")
+        # Step 1: Pick keyword
+        print("Picking next keyword...")
+        keyword_entry, progress = pick_next_keyword()
+        print(f"  Keyword: {keyword_entry['keyword']}")
+        print(f"  Category: {keyword_entry['category']}")
 
-    print(f"=== Done. Article #{total} published. ===")
+        # Step 2: Write article (retries handled inside write_article)
+        print("Writing article with Claude...")
+        content, slug, keyword, category = write_article(keyword_entry)
+        print(f"  Article written: {slug}")
+
+        # Step 3: Publish to GitHub
+        print("Publishing to GitHub...")
+        success, result = publish_article(content, slug)
+        if not success:
+            raise RuntimeError(f"Publishing failed: {result}")
+        print(f"  Published: {result}")
+
+        # Step 4: Mark keyword complete only after successful publish
+        mark_keyword_complete(keyword_entry, progress)
+        total = progress["total_articles"] + 1
+
+        mark_ran_today()
+
+        # Step 5: Send success notification
+        print("Sending email notification...")
+        try:
+            send_notification(keyword, category, result, total)
+        except Exception as e:
+            print(f"  WARNING: Notification failed: {e}")
+
+        print(f"=== Done. Article #{total} published. ===")
+
+    except Exception as e:
+        print(f"ERROR: Pipeline failed — {e}")
+        try:
+            kw = keyword_entry["keyword"] if keyword_entry else "unknown"
+            send_failure_notification(kw, str(e))
+        except Exception:
+            pass
+        sys.exit(1)
 
 
 if __name__ == "__main__":

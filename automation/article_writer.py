@@ -2,10 +2,14 @@ import anthropic
 import json
 import os
 import re
+import time
 from datetime import datetime
 
 PERSONA_FILE = os.path.join(os.path.dirname(__file__), "../config/persona.json")
 AFFILIATES_FILE = os.path.join(os.path.dirname(__file__), "../config/affiliates.json")
+
+MAX_RETRIES = 3
+RETRY_DELAY = 10  # seconds between retries
 
 
 def slugify(text):
@@ -54,16 +58,27 @@ REQUIREMENTS:
 Write the complete article now, starting with the front matter.
 """
 
-    message = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=2500,
-        messages=[{"role": "user", "content": prompt}],
-    )
+    last_error = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            message = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=4000,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            content = message.content[0].text.strip()
+            # Strip markdown code fences if Claude wraps the output
+            if content.startswith("```"):
+                content = re.sub(r"^```[a-z]*\n", "", content)
+                content = re.sub(r"\n```$", "", content)
+            slug = slugify(keyword)
+            return content, slug, keyword, category
 
-    content = message.content[0].text.strip()
-    # Strip markdown code fences if Claude wraps the output
-    if content.startswith("```"):
-        content = re.sub(r"^```[a-z]*\n", "", content)
-        content = re.sub(r"\n```$", "", content)
-    slug = slugify(keyword)
-    return content, slug, keyword, category
+        except Exception as e:
+            last_error = e
+            print(f"  Attempt {attempt}/{MAX_RETRIES} failed: {e}")
+            if attempt < MAX_RETRIES:
+                print(f"  Retrying in {RETRY_DELAY} seconds...")
+                time.sleep(RETRY_DELAY)
+
+    raise RuntimeError(f"Claude API failed after {MAX_RETRIES} attempts: {last_error}")
