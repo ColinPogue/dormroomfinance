@@ -4,6 +4,7 @@ import os
 import re
 import time
 from datetime import datetime
+from image_fetcher import fetch_image
 
 PERSONA_FILE = os.path.join(os.path.dirname(__file__), "../config/persona.json")
 AFFILIATES_FILE = os.path.join(os.path.dirname(__file__), "../config/affiliates.json")
@@ -72,6 +73,24 @@ Write the complete article now, starting with the front matter.
                 content = re.sub(r"^```[a-z]*\n", "", content)
                 content = re.sub(r"\n```$", "", content)
             slug = slugify(keyword)
+
+            # Fetch cover image from Pexels and inject into frontmatter
+            print("  Fetching cover image...")
+            image_path, photographer = fetch_image(keyword, slug, category)
+            if image_path:
+                cover_block = (
+                    f"cover:\n"
+                    f"  image: \"{image_path}\"\n"
+                    f"  alt: \"{keyword}\"\n"
+                    f"  caption: \"Photo by {photographer} on Pexels\"\n"
+                    f"  relative: false\n"
+                )
+                content = re.sub(
+                    r"(draft: false\n)",
+                    r"\1" + cover_block,
+                    content
+                )
+
             return content, slug, keyword, category
 
         except Exception as e:
