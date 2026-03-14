@@ -2,7 +2,7 @@ baseURL = "https://dormroomfinance.com/"
 languageCode = "en-us"
 title = "Dorm Room Finance"
 theme = "PaperMod"
-paginate = 5
+paginate = 4
 
 [params]
   env = "production"
