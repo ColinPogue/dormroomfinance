@@ -1,19 +1,11 @@
-{{- with site.Params.homeInfoParams }}
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>{{ .Title | markdownify }}</h1>
-    </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
+<section class="hero">
+    <div class="hero-left">
+        <span class="hero-tag">Personal Finance for College Students</span>
+        <h1 class="hero-title">Real money advice, no fluff.</h1>
+        <p class="hero-sub">Credit cards, investing, budgeting, side hustles. Written by a college student who's figuring it out and writing it all down.</p>
+        <div class="hero-actions">
+            <a href="/articles/" class="hero-btn-primary">Browse Articles</a>
+            <a href="/categories/" class="hero-btn-ghost">View Topics</a>
+        </div>
     </div>
-    <footer class="entry-footer">
-        <a href="mailto:cpogue208@gmail.com" class="email-cta">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="18" width="18">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            Message me
-        </a>
-    </footer>
-</article>
-{{- end -}}
+</section>
