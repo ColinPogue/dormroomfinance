@@ -41,7 +41,7 @@ def send_notification(keyword, category, article_url, total_articles):
     msg["To"] = recipient
     msg.attach(MIMEText(html, "html"))
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=15) as server:
         server.login(gmail_address, gmail_password)
         server.sendmail(gmail_address, recipient, msg.as_string())
 
@@ -77,6 +77,6 @@ def send_failure_notification(keyword, error_message):
     msg["To"] = recipient
     msg.attach(MIMEText(html, "html"))
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=15) as server:
         server.login(gmail_address, gmail_password)
         server.sendmail(gmail_address, recipient, msg.as_string())
