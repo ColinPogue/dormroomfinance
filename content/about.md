@@ -5,6 +5,8 @@ url: "/about/"
 summary: "About Dorm Room Finance and Colin"
 ---
 
+<img src="/Headshot.jpg" alt="Colin Pogue" style="float: right; width: 180px; border-radius: 50%; margin: 0 0 1rem 1.5rem;">
+
 I'm Colin, a junior at Tulane studying business in New Orleans.
 
 I started this site because most personal finance content is either written for 40-year-olds or treats college students like they can't handle a real explanation. Neither is useful when you're trying to figure out your first credit card or whether a Roth IRA is actually worth opening at 20.
