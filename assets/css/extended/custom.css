@@ -514,3 +514,89 @@ figcaption, .post-content figcaption {
     color: #1a4731;
     font-weight: 700;
 }
+
+/* ===== GUTTER PANELS ===== */
+.gutter-panel {
+    position: fixed;
+    top: 150px;
+    width: 230px;
+}
+
+.gutter-left  { left: calc(50% - 430px - 254px); }
+.gutter-right { right: calc(50% - 430px - 254px); }
+
+.gutter-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.4rem 1.3rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    border: 1px solid #e2e8e0;
+    border-top: 5px solid #2d6a4f;
+}
+
+.gutter-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #2d6a4f;
+    margin: 0 0 0.9rem 0;
+}
+
+.gutter-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.gutter-links a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #4a5568 !important;
+    text-decoration: none !important;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: background 0.15s, color 0.15s;
+    display: block;
+}
+
+.gutter-links a:hover {
+    background: #e8f5ee;
+    color: #1a4731 !important;
+}
+
+.gutter-start-intro {
+    font-size: 0.83rem;
+    color: #718096;
+    line-height: 1.6;
+    margin: 0 0 0.9rem 0;
+}
+
+.gutter-start-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.gutter-start-links a {
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #2d6a4f !important;
+    text-decoration: none !important;
+    line-height: 1.5;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f4f1;
+    transition: color 0.15s;
+}
+
+.gutter-start-links a:last-child {
+    border-bottom: none;
+}
+
+.gutter-start-links a:hover {
+    color: #1a4731 !important;
+}
+
+@media (max-width: 1380px) {
+    .gutter-panel { display: none; }
+}
