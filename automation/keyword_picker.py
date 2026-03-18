@@ -19,17 +19,16 @@ def pick_next_keyword():
 
     # If all keywords used, start over
     if not remaining:
-        completed = set()
         remaining = keywords
         progress["completed"] = []
 
     keyword_entry = random.choice(remaining)
+    return keyword_entry, progress
 
-    # Update progress
+
+def mark_keyword_complete(keyword_entry, progress):
     progress["completed"].append(keyword_entry["keyword"])
     progress["total_articles"] += 1
 
     with open(PROGRESS_FILE, "w") as f:
         json.dump(progress, f, indent=2)
-
-    return keyword_entry
