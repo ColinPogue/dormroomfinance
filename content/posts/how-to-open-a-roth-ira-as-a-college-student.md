@@ -1,12 +1,16 @@
-+++
-title = "How to Open a Roth IRA as a College Student (Even If You're Broke)"
-date = 2026-03-30T09:00:03+00:00
-description = "Learn how to open a Roth IRA as a college student with as little as $1. A real college junior breaks down the steps, rules, and why starting now matters."
-categories = ["Investing"]
-tags = ["roth ira", "college investing", "retirement accounts", "fidelity", "student money"]
-draft = false
-+++
-```
+---
+title: "How to Open a Roth IRA as a College Student (Even If You're Broke)"
+date: 2026-03-30T09:00:03+00:00
+description: "Learn how to open a Roth IRA as a college student with as little as $1. A real college junior breaks down the steps, rules, and why starting now matters."
+categories: ["Investing"]
+tags: ["roth ira", "college investing", "retirement accounts", "fidelity", "student money"]
+draft: false
+cover:
+  image: "/images/posts/how-to-open-a-roth-ira-as-a-college-student.jpg"
+  alt: "how to open a Roth IRA as a college student"
+  caption: "Photo by Pexels"
+  relative: false
+---
 
 *This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
