@@ -1,0 +1,42 @@
+{{- $currentPage := . }}
+{{- $allPosts := where site.RegularPages "Type" "posts" }}
+{{- $related := slice }}
+
+{{- range $allPosts }}
+    {{- $page := . }}
+    {{- if ne $page.Permalink $currentPage.Permalink }}
+        {{- range $currentPage.Params.categories }}
+            {{- if in $page.Params.categories . }}
+                {{- $related = $related | append $page }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+
+{{- $related = $related | uniq }}
+
+{{- if ge (len $related) 2 }}
+<div class="related-articles">
+    <div class="related-header">
+        <span class="related-header-label">Keep Reading</span>
+    </div>
+    <div class="related-grid">
+        {{- range first 3 $related }}
+        <a href="{{ .Permalink }}" class="related-card">
+            {{- with .Params.cover.image }}
+            <div class="related-img" style="background-image: url('{{ . }}')"></div>
+            {{- else }}
+            <div class="related-img related-img-placeholder"></div>
+            {{- end }}
+            <div class="related-card-body">
+                {{- with index .Params.categories 0 }}
+                <span class="related-cat">{{ . }}</span>
+                {{- end }}
+                <p class="related-card-title">{{ .Title }}</p>
+                <span class="related-meta">{{ .ReadingTime }} min read</span>
+            </div>
+        </a>
+        {{- end }}
+    </div>
+</div>
+{{- end }}
