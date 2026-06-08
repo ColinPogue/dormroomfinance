@@ -663,6 +663,111 @@ figcaption, .post-content figcaption {
 }
 
 
+/* ===== RELATED ARTICLES ===== */
+.related-articles {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e8f0eb;
+}
+
+.related-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.related-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #d4edde;
+}
+
+.related-header-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #2d6a4f;
+    white-space: nowrap;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.related-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e8f0eb;
+    border-top: 3px solid #2d6a4f;
+    overflow: hidden;
+    text-decoration: none !important;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.related-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.related-img {
+    height: 105px;
+    background-size: cover;
+    background-position: center;
+}
+
+.related-img-placeholder {
+    background: linear-gradient(135deg, #e8f5ee 0%, #c8e6d0 100%);
+}
+
+.related-card-body {
+    padding: 0.85rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    flex: 1;
+}
+
+.related-cat {
+    font-size: 0.67rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #2d6a4f;
+    background: #e8f5ee;
+    padding: 2px 8px;
+    border-radius: 20px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.related-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #1a202c;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.related-meta {
+    font-size: 0.73rem;
+    color: #a0aec0;
+    margin-top: auto;
+    padding-top: 0.25rem;
+}
+
+@media (max-width: 680px) {
+    .related-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== FEED HEADER ===== */
 .feed-header {
     display: flex;
