@@ -608,6 +608,41 @@ figcaption, .post-content figcaption {
     color: #1a4731 !important;
 }
 
+.gutter-stats-card {
+    margin-top: 1rem;
+}
+
+.gutter-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+}
+
+.gutter-stat {
+    background: #f0f7f3;
+    border: 1px solid #d4edde;
+    border-radius: 8px;
+    padding: 0.65rem 0.5rem;
+    text-align: center;
+}
+
+.gutter-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1a4731;
+    line-height: 1.2;
+}
+
+.gutter-stat-label {
+    font-size: 0.63rem;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-top: 2px;
+}
+
 @media (max-width: 1380px) {
     .gutter-panel { display: none; }
 }
