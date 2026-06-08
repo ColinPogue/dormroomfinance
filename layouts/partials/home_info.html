@@ -1,42 +1,43 @@
 <section class="hero">
-    <div class="hero-left">
-        <span class="hero-tag">Personal Finance for College Students</span>
-        <h1 class="hero-title">Written by a college student, for college students.</h1>
-        <p class="hero-sub">Credit cards, investing, budgeting, side hustles. Written by a college student who's figuring it out and writing it all down.</p>
-        <div class="hero-actions">
-            <a href="/articles/" class="hero-btn-primary">Browse Articles</a>
-            <a href="/categories/" class="hero-btn-ghost">View Topics</a>
-        </div>
-        <div class="hero-topics">
-            <a href="/categories/credit-cards/" class="hero-topic-pill">Credit Cards</a>
-            <a href="/categories/investing/" class="hero-topic-pill">Investing</a>
-            <a href="/categories/budgeting/" class="hero-topic-pill">Budgeting</a>
-            <a href="/categories/side-hustles/" class="hero-topic-pill">Side Hustles</a>
-            <a href="/categories/banking/" class="hero-topic-pill">Banking</a>
-            <a href="/categories/student-loans/" class="hero-topic-pill">Student Loans</a>
-        </div>
-    </div>
-    <div class="hero-right">
-        <div class="hero-stat-block">
-            <div class="hero-stat">
-                <div class="hero-stat-num">{{ len (where site.RegularPages "Type" "posts") }}+</div>
-                <div class="hero-stat-label">Articles</div>
-            </div>
-            <div class="hero-stat">
-                <div class="hero-stat-num">8</div>
-                <div class="hero-stat-label">Topics</div>
-            </div>
-            <div class="hero-stat hero-stat-full">
-                <div class="hero-stat-num">Weekly</div>
-                <div class="hero-stat-label">New articles added</div>
-            </div>
-            <div class="hero-stat hero-stat-full">
-                <div class="hero-stat-num">Free</div>
-                <div class="hero-stat-label">Always, no paywall</div>
-            </div>
-        </div>
+    <span class="hero-tag">Personal Finance for College Students</span>
+    <h1 class="hero-title">Written by a college student, for college students.</h1>
+    <p class="hero-sub">Credit cards, investing, budgeting, side hustles. Written by a college student who's figuring it out and writing it all down.</p>
+    <div class="hero-bottom-row">
+        <a href="/articles/" class="hero-btn-primary">Browse Articles</a>
+        <a href="/categories/" class="hero-btn-ghost">View Topics</a>
+        <span class="hero-row-divider"></span>
+        <a href="/categories/credit-cards/" class="hero-topic-pill">Credit Cards</a>
+        <a href="/categories/investing/" class="hero-topic-pill">Investing</a>
+        <a href="/categories/budgeting/" class="hero-topic-pill">Budgeting</a>
+        <a href="/categories/side-hustles/" class="hero-topic-pill">Side Hustles</a>
+        <a href="/categories/banking/" class="hero-topic-pill">Banking</a>
+        <a href="/categories/student-loans/" class="hero-topic-pill">Student Loans</a>
     </div>
 </section>
+
+<div class="below-hero">
+    <div class="stats-card">
+        <div class="stats-item">
+            <span class="stats-num">{{ len (where site.RegularPages "Type" "posts") }}+</span>
+            <span class="stats-label">Articles</span>
+        </div>
+        <div class="stats-divider"></div>
+        <div class="stats-item">
+            <span class="stats-num">8</span>
+            <span class="stats-label">Topics</span>
+        </div>
+        <div class="stats-divider"></div>
+        <div class="stats-item">
+            <span class="stats-num">Weekly</span>
+            <span class="stats-label">Updates</span>
+        </div>
+        <div class="stats-divider"></div>
+        <div class="stats-item">
+            <span class="stats-num">Free</span>
+            <span class="stats-label">No paywall</span>
+        </div>
+    </div>
+</div>
 
 <div class="feed-header">
     <span class="feed-header-label">Latest Articles</span>
