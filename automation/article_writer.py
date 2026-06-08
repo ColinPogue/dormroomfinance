@@ -116,10 +116,26 @@ def write_article(keyword_entry):
     else:
         links_block = "INTERNAL LINKS — none available yet for this category; skip."
 
-    prompt = f"""You are writing a blog article for DormRoomFinance.com as {persona['name']}, a {persona['age']}-year-old {persona['year']} at a {persona['school']}.
+    # --- Build persona context blocks ---
+    anecdotes = persona.get("anecdotes", [])
+    anecdotes_text = "\n".join(f"  {i+1}. {a}" for i, a in enumerate(anecdotes))
+    voice_notes_text = "\n".join(f"  - {v}" for v in persona.get("voice_notes", []))
+    fp = persona.get("financial_profile", {})
+    accounts_text = "\n".join(f"  - {a}" for a in fp.get("accounts", []))
+
+    prompt = f"""You are writing a blog article for DormRoomFinance.com as {persona['name']}, a {persona['age']}-year-old {persona['year']} at {persona['school']} studying {persona.get('major', 'finance')}. Currently: {persona.get('internship', '')}.
 
 VOICE & STYLE:
-{chr(10).join(f'- {s}' for s in persona['writing_style'])}
+{chr(10).join(f'  - {s}' for s in persona['writing_style'])}
+
+WHO COLIN IS (never break character — write as this specific person):
+{voice_notes_text}
+
+COLIN'S REAL ACCOUNTS (reference naturally when relevant — these are his actual products):
+{accounts_text}
+
+ANECDOTES BANK — pick ONE that fits the topic. Use it naturally; adapt specific details if needed. Do not use more than one:
+{anecdotes_text}
 
 DISCLAIMER: "{persona['disclaimers']}"
 AFFILIATE DISCLOSURE (include at top): "{affiliates['link_disclosure']}"
@@ -130,14 +146,13 @@ CATEGORY: {category}
 {structure_instructions}
 
 CONTENT REQUIREMENTS:
-- Length: 1,100-1,400 words (tables count toward this; don't pad with prose)
+- Length: 1,500-1,800 words (tables count toward this; do not pad with prose to hit the target)
 - Hugo-compatible Markdown, YAML front matter with --- delimiters, NOT wrapped in code fences
 - Front matter fields: title, date ({datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00')}), description (150-160 chars, action-oriented — lead with the benefit, earn the click), categories (["{category}"]), tags (4-6 relevant tags), draft: false
 - No horizontal rules between sections
 - No hyphens or em dashes in article text
-- One specific personal story or moment
-- Where naturally relevant, mention real products or services (credit cards, apps, brokerages)
-- End with "## Frequently Asked Questions" containing 4-5 Q&As. Format: **Q: question** followed by a 1-2 sentence answer. No "Bottom Line" section — let the last body section close naturally.
+- PRODUCT SPECIFICITY REQUIRED: Name real products with real details. Credit cards: include actual APR range, annual fee, sign-up bonus. Banks: include actual current APY. Brokerages: actual minimums and fee structure. Use realistic current figures. Generic phrases like "many cards offer rewards" or "some banks pay higher rates" are not acceptable — be specific.
+- End with "## Frequently Asked Questions" containing 5 Q&As. Format: **Q: question** followed by a 1-2 sentence answer.
 
 {links_block}
 
@@ -149,7 +164,7 @@ Write the complete article now, starting with the front matter."""
         try:
             message = client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=3000,
+                max_tokens=4500,
                 messages=[{"role": "user", "content": prompt}],
             )
             raw = message.content[0].text.strip()
