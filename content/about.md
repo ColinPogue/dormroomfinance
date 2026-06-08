@@ -27,7 +27,7 @@ Outside of finance I am involved in Tulane's Energy Club, spend more time than I
 - **First Job Finances:** what to do with your first real paycheck so you do not waste the head start
 - **Banking:** the accounts worth having and the fees worth avoiding
 
-The site has 38+ articles across 8 categories with new articles every week. I am not a financial advisor and nothing here is professional advice. It is a finance student sharing what he is actually doing and what he has actually learned.
+The site has 38+ articles across 8 categories with new articles three times a week. I am not a financial advisor and nothing here is professional advice. It is a finance student sharing what he is actually doing and what he has actually learned.
 
 If there is a topic you want covered or a question you cannot find a straight answer to, reach out.
 
