@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 DormRoomFinance Automation
-Runs daily via launchd:
+Runs Monday, Wednesday, Friday at 9am via launchd:
 1. Validates environment
 2. Picks next keyword from list
 3. Writes article via Claude API (with retry)
@@ -12,7 +12,7 @@ Runs daily via launchd:
 import json
 import os
 import sys
-from datetime import date
+from datetime import date, timedelta
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -48,9 +48,16 @@ def validate_env():
 def already_ran_today():
     if not os.path.exists(LAST_RUN_FILE):
         return False
-    with open(LAST_RUN_FILE) as f:
-        data = json.load(f)
-    return data.get("last_run_date") == str(date.today())
+    try:
+        with open(LAST_RUN_FILE) as f:
+            data = json.load(f)
+        last_run = data.get("last_run_date")
+        if not last_run:
+            return False
+        return date.fromisoformat(last_run) == date.today()
+    except (json.JSONDecodeError, KeyError, OSError, ValueError) as e:
+        print(f"  WARNING: Could not read last_run.json ({e}), treating as not yet run today.")
+        return False
 
 
 def mark_ran_today():
@@ -59,7 +66,7 @@ def mark_ran_today():
 
 
 def main():
-    print("=== DormRoomFinance Daily Run ===")
+    print("=== DormRoomFinance Weekly Run ===")
 
     validate_env()
 
@@ -84,14 +91,16 @@ def main():
 
         # Step 3: Publish to GitHub
         print("Publishing to GitHub...")
-        success, result = publish_article(content, slug)
+        success, result, image_uploaded = publish_article(content, slug)
         if not success:
             raise RuntimeError(f"Publishing failed: {result}")
         print(f"  Published: {result}")
+        if not image_uploaded:
+            print("  NOTE: Article published without cover image.")
 
         # Step 4: Mark keyword complete only after successful publish
         mark_keyword_complete(keyword_entry, progress)
-        total = progress["total_articles"] + 1
+        total = progress["total_articles"]  # already incremented by mark_keyword_complete
 
         mark_ran_today()
 
@@ -109,8 +118,8 @@ def main():
         try:
             kw = keyword_entry["keyword"] if keyword_entry else "unknown"
             send_failure_notification(kw, str(e))
-        except Exception:
-            pass
+        except Exception as notify_err:
+            print(f"  WARNING: Could not send failure notification: {notify_err}")
         sys.exit(1)
 
 
