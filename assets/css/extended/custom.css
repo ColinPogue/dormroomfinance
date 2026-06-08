@@ -608,39 +608,49 @@ figcaption, .post-content figcaption {
     color: #1a4731 !important;
 }
 
+.gutter-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .gutter-stats-card {
-    margin-top: 1rem;
+    padding: 0 !important;
+    overflow: hidden;
 }
 
 .gutter-stats-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.65rem;
 }
 
 .gutter-stat {
-    background: #f0f7f3;
-    border: 1px solid #d4edde;
-    border-radius: 8px;
-    padding: 0.65rem 0.5rem;
+    padding: 1rem 0.75rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
+
+.gutter-stat:nth-child(odd)  { border-right: 1px solid #e8f0eb; }
+.gutter-stat:nth-child(1),
+.gutter-stat:nth-child(2)    { border-bottom: 1px solid #e8f0eb; }
 
 .gutter-stat-num {
     font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
+    font-size: 1.45rem;
     font-weight: 800;
     color: #1a4731;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .gutter-stat-label {
     font-size: 0.63rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #718096;
     text-transform: uppercase;
-    letter-spacing: 0.4px;
-    margin-top: 2px;
+    letter-spacing: 0.5px;
 }
 
 @media (max-width: 1380px) {
@@ -652,57 +662,6 @@ figcaption, .post-content figcaption {
     background: linear-gradient(150deg, #ffffff 0%, #edf7f1 100%) !important;
 }
 
-/* ===== STATS CARD ===== */
-.below-hero {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 0 0.75rem 0;
-}
-
-.stats-card {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #e2e8e0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow: hidden;
-}
-
-.stats-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.55rem 1.1rem;
-}
-
-.stats-divider {
-    width: 1px;
-    height: 28px;
-    background: #e8f0eb;
-    flex-shrink: 0;
-}
-
-.stats-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: #1a4731;
-    line-height: 1.2;
-}
-
-.stats-label {
-    font-size: 0.67rem;
-    font-weight: 600;
-    color: #718096;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    margin-top: 1px;
-}
-
-@media (max-width: 680px) {
-    .below-hero { display: none; }
-}
 
 /* ===== FEED HEADER ===== */
 .feed-header {
