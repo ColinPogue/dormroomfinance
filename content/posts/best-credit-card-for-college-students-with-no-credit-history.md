@@ -5,6 +5,11 @@ description: "The best student credit cards for no credit history, compared side
 categories: ["Credit Cards"]
 tags: ["student credit cards", "no credit history", "build credit", "college finances", "credit score", "best student credit cards", "discover student card", "capital one student"]
 draft: false
+cover:
+  image: "/images/posts/best-credit-card-for-college-students-with-no-credit-history.jpg"
+  alt: "best credit cards for college students with no credit history"
+  caption: "Photo by Leeloo The First on Pexels"
+  relative: false
 ---
 
 *This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
