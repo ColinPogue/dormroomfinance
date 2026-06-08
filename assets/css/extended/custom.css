@@ -600,3 +600,80 @@ figcaption, .post-content figcaption {
 @media (max-width: 1380px) {
     .gutter-panel { display: none; }
 }
+
+/* ===== HERO UPGRADE ===== */
+.hero {
+    background: linear-gradient(150deg, #ffffff 0%, #edf7f1 100%) !important;
+}
+
+.hero-right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-stat-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    width: 170px;
+}
+
+.hero-stat {
+    background: #ffffff;
+    border: 1px solid #d4edde;
+    border-radius: 10px;
+    padding: 0.9rem 0.75rem;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+.hero-stat-full {
+    grid-column: 1 / -1;
+}
+
+.hero-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #1a4731;
+    line-height: 1.1;
+    margin-bottom: 3px;
+}
+
+.hero-stat-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+@media (max-width: 680px) {
+    .hero-right { display: none; }
+}
+
+/* ===== FEED HEADER ===== */
+.feed-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0 1.25rem 0;
+}
+
+.feed-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #d4edde;
+}
+
+.feed-header-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #2d6a4f;
+    white-space: nowrap;
+}
