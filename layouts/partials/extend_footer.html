@@ -12,6 +12,26 @@
             <a href="/categories/banking/">Banking</a>
         </nav>
     </div>
+    <div class="gutter-card gutter-stats-card">
+        <div class="gutter-stats-grid">
+            <div class="gutter-stat">
+                <span class="gutter-stat-num">{{ len (where site.RegularPages "Type" "posts") }}+</span>
+                <span class="gutter-stat-label">Articles</span>
+            </div>
+            <div class="gutter-stat">
+                <span class="gutter-stat-num">8</span>
+                <span class="gutter-stat-label">Topics</span>
+            </div>
+            <div class="gutter-stat">
+                <span class="gutter-stat-num">Weekly</span>
+                <span class="gutter-stat-label">Updates</span>
+            </div>
+            <div class="gutter-stat">
+                <span class="gutter-stat-num">Free</span>
+                <span class="gutter-stat-label">Always</span>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="gutter-panel gutter-right">
@@ -22,26 +42,6 @@
             <a href="/posts/best-credit-card-for-college-students-with-no-credit-history/">→ Best credit cards for college students</a>
             <a href="/posts/how-to-build-credit-in-college-from-scratch/">→ How to build credit from scratch</a>
             <a href="/posts/passive-income-ideas-for-college-students/">→ Passive income ideas for college students</a>
-        </div>
-    </div>
-    <div class="gutter-card gutter-stats-card">
-        <div class="gutter-stats-grid">
-            <div class="gutter-stat">
-                <div class="gutter-stat-num">{{ len (where site.RegularPages "Type" "posts") }}+</div>
-                <div class="gutter-stat-label">Articles</div>
-            </div>
-            <div class="gutter-stat">
-                <div class="gutter-stat-num">8</div>
-                <div class="gutter-stat-label">Topics</div>
-            </div>
-            <div class="gutter-stat">
-                <div class="gutter-stat-num">Weekly</div>
-                <div class="gutter-stat-label">Updates</div>
-            </div>
-            <div class="gutter-stat">
-                <div class="gutter-stat-num">Free</div>
-                <div class="gutter-stat-label">No paywall</div>
-            </div>
         </div>
     </div>
 </div>
