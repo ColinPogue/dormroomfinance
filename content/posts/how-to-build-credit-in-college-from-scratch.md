@@ -7,7 +7,6 @@ tags: ["build credit in college", "student credit cards", "credit score tips", "
 draft: false
 ---
 
-> **Affiliate Disclosure:** This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.
 
 ---
 

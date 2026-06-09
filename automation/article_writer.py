@@ -138,7 +138,6 @@ ANECDOTES BANK — pick ONE that fits the topic. Use it naturally; adapt specifi
 {anecdotes_text}
 
 DISCLAIMER: "{persona['disclaimers']}"
-AFFILIATE DISCLOSURE (include at top): "{affiliates['link_disclosure']}"
 
 TOPIC: "{keyword}"
 CATEGORY: {category}

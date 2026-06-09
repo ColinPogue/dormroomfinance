@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 Last semester I spent $340 on groceries in one month and genuinely could not explain where it went. Half a bag of wilting spinach, some Greek yogurt I overpaid for, a block of cheese from the wrong store. That was my breaking point. I started paying attention to where I was actually shopping and cut that number almost in half without eating worse.
 

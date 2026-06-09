@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 I genuinely did not understand my student loans until the end of my sophomore year. Like, I knew they existed. I knew I had signed some forms during FAFSA season. But I had absolutely no idea how much I owed, what the interest rate was, or who I was even supposed to pay back when the time came.
 

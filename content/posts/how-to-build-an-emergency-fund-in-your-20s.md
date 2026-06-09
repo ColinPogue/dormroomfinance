@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 Nobody told me that getting my first real paycheck would somehow feel like having less money than before. Suddenly there are bills with your name on them, rent that hits different when it's not your parents paying it, and this creeping anxiety that one bad week could blow up everything you've barely started to build. That's exactly why an emergency fund matters so much in your 20s, and why most of us wait way too long to start one.
 

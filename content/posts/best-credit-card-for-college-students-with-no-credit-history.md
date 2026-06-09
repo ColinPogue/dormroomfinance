@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 Sophomore year I tried to rent an apartment off campus and the landlord ran a credit check. It came back blank. Not bad credit. Just nothing at all. I had never opened a credit account, so from the bureaus' perspective I basically didn't exist as a financial person.
 

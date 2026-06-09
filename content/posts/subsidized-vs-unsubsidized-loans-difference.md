@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 I signed my first student loan documents at 18 on a laptop in my childhood bedroom while my mom watched over my shoulder. Neither of us actually understood what we were agreeing to. We just kept clicking "Next" because the financial aid office told us we needed to complete the process before orientation. It wasn't until sophomore year that I realized I had been letting interest quietly pile up on part of my loan the entire time I was sitting in class.
 

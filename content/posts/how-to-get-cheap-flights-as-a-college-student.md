@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 *I'm not a financial advisor, just a business student sharing what I've learned. Do your own research before making financial decisions.*
 

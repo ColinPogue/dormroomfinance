@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 I signed up for Amazon Prime Student during my freshman year mostly because my roommate kept stealing my snacks and I needed to order more without paying $8 for shipping. Not exactly a financial mastermind move. But two years later I'm still subscribed, and I've actually thought a lot about whether it's genuinely worth it or just one of those things you pay for and forget about.
 

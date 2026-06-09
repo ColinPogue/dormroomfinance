@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 I'm not going to pretend I had some brilliant financial awakening at 18. Honestly, I took my first part time job junior year mostly because my bank account was embarrassing and I kept saying no to things I actually wanted to do. That gets old fast.
 

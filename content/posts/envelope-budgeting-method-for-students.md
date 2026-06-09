@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 I used to check my bank account the way people check if they left the stove on. Constantly, nervously, already knowing the answer was probably bad. Last semester I blew through my entire monthly food budget in eleven days. Eleven. And I wasn't even eating well. I was just spending without thinking, swiping my card at the Wawa on Magazine Street every night like it owed me something.
 

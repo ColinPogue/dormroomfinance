@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 Last spring I got an offer for a summer internship at a mid-size logistics company here in New Orleans. The number they sent over was fine. Not exciting, just fine. My first instinct was to reply immediately and say thank you and yes and please before they changed their minds.
 

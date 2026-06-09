@@ -12,7 +12,6 @@ cover:
   relative: false
 ---
 
-*This post may contain affiliate links. If you click and sign up, I may earn a small commission at no cost to you. I only recommend products I'd actually use.*
 
 I used to think studying abroad was just for kids whose parents had a second home somewhere in Europe. Like, cool for them, but not really an option for someone paying their own tuition and splitting a grocery bill with two roommates. Then I spent a semester in Lisbon last fall and it cost me less than a semester at my home school in New Orleans. Not joking.
 
