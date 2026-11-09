@@ -5,12 +5,12 @@ url: "/foodtalk-privacy/"
 summary: "Privacy policy for the FoodTalk iOS app"
 ---
 
-**Effective date:** August 28, 2026
-**Last updated:** September 27, 2026
+**Effective date:** August 12, 2026
+**Last updated:** November 9, 2026
 
 FoodTalk ("we," "us," or "the app") is a voice-first macro and nutrition tracker. This policy explains what we collect, why, how it's used, and the choices you have. We keep it plain because privacy shouldn't require a law degree.
 
-**Contact:** [cpogue208@gmail.com](mailto:cpogue208@gmail.com)
+> **Contact:** cpogue208@gmail.com
 
 ---
 
@@ -28,10 +28,10 @@ FoodTalk ("we," "us," or "the app") is a voice-first macro and nutrition tracker
 - Your email address and a password (passwords are stored securely by our authentication provider; we never see them in plain text).
 
 **2. Nutrition data you create**
-- The foods you log, quantities, meals, calories and macros, your goals/targets, and any weight entries you add.
+- The foods you log, quantities, meals, calories and macros, your goals/targets and profile values used to calculate them, activities you log (including duration, effort and estimated calories), and any weight entries you add.
 
 **3. Voice input**
-- When you use voice logging, your speech is converted to text. On the iOS app this happens using Apple's on-device speech recognition. **We do not record or store audio.** Only the resulting text (what you said) is used.
+- When you use voice logging, your speech is converted to text. On the iOS app this uses Apple's speech-recognition service, subject to your device permissions and Apple's service settings. **We do not record or store audio.** Only the resulting text (what you said) is used.
 
 **4. Basic technical/usage data**
 - Minimal information needed to run the service (e.g., how many logs you've made in a day, to apply free-tier limits). We do not use third-party advertising or cross-app tracking.
@@ -54,12 +54,12 @@ We do **not** sell your personal information, and we do **not** use it for third
 ## Third-party services we use
 To provide the app, limited data is shared with service providers strictly to perform these functions:
 
-- **Google (Gemini API)** — when you log a meal, the **text of that meal** (what you said or typed) is sent to Google's Gemini AI to interpret it into food items and macros. Only the meal text is sent — no audio, and no information that identifies you. The app asks for your permission before this happens, and you can read what Google does with data sent to the Gemini API in [Google's privacy policy](https://policies.google.com/privacy). This text is processed to return a result and is not used to identify you.
 - **Supabase** — stores your account and your nutrition data securely, and runs the secure functions that process your requests.
+- **Google (Gemini API) and Groq** — meal text, food descriptions and related nutrition details may be sent to either provider to interpret food items, quantities and macros. FoodTalk asks for your consent before this food-AI sharing. FoodTalk does not send audio or account credentials to these food-AI providers.
 - **USDA FoodData Central** — public nutrition database queried to verify food macros.
-- **Apple** — the App Store, on-device speech recognition, and (for Premium) in-app purchases handled by Apple.
+- **Apple** — the App Store, speech recognition and app distribution services.
 
-Each provider processes data only to deliver its part of the service, and provides protections at least equal to those described in this policy.
+Each provider processes information under its own applicable service terms and privacy policies.
 
 ---
 
@@ -74,6 +74,7 @@ Depending on where you live (e.g., under GDPR or CCPA), you may have the right t
 - **Access / export:** request a copy of your data.
 - **Delete:** delete your account in-app or by email; we remove your data.
 - **Correction:** edit your logs, goals, and profile directly in the app.
+- **Optional assistant access:** regular accounts can generate a personal read-only token in Settings. An assistant you give this token can read your synced food logs, daily totals and targets, activities, target-related goals/profile fields, and weight history. It cannot change your data, sign in as you, or read your password or unrelated account information. FoodTalk stores a hash of the token, shows the secret only when generated, and records device sync status and timezone to explain freshness. You can turn access off, replace the token, or delete it. These actions stop subsequent access; they cannot erase copies already received by your assistant. Your chosen assistant's own data retention and memory settings apply to information you share with it. Guest accounts cannot grant assistant access.
 
 We do not sell personal information, so there is no "sale" to opt out of.
 
@@ -84,7 +85,7 @@ FoodTalk is not directed to children under 13 (or the minimum age in your region
 We may update this policy as the app evolves. Material changes will be reflected by updating the "Last updated" date, and where appropriate, noted in the app.
 
 ## Contact us
-Questions or requests: **[cpogue208@gmail.com](mailto:cpogue208@gmail.com)**
+Questions or requests: **cpogue208@gmail.com**
 
 ---
 
