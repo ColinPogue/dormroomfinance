@@ -25,7 +25,15 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),`No horizontal overflow at ${width}: ${route}`);
     assert.ok(await page.locator('.site-nav').isVisible());
     const images=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>i.complete&&i.naturalWidth===0).map(i=>i.src));assert.deepEqual(images,[]);
-    if(route==='/')await page.screenshot({path:path.join(root,'qa-screenshots',`home-${width}.png`),fullPage:true});
+    if(route==='/'){
+     await page.screenshot({path:path.join(root,'qa-screenshots',`home-${width}.png`),fullPage:true});
+     if(width!==320){
+      const preview=await page.screenshot({type:'jpeg',quality:45,fullPage:false});
+      console.log(`DRF_IMAGE_${width}_BEGIN`);
+      for(const chunk of preview.toString('base64').match(/.{1,4000}/g))console.log(chunk);
+      console.log(`DRF_IMAGE_${width}_END`);
+     }
+    }
    }
    await page.goto(base+'/tools/student-budget/',{waitUntil:'networkidle'});
    await page.waitForFunction(()=>document.querySelector('#result-balance').textContent==='$100.00');

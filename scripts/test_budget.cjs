@@ -8,4 +8,4 @@ assert.equal(calculate(Object.fromEntries(Object.keys(base).map(k=>[k,0]))).bala
 assert.equal(calculate({...base,annual:1201}).monthlyIrregular,1201/12);
 for (const value of [-1,NaN,Infinity,10000001,undefined]) assert.throws(()=>calculate({...base,income:value}));
 assert.ok(Math.abs(calculate({...base,income:0.3,housing:0.1,food:0.2,transport:0,bills:0,debt:0,flexible:0,savings:0,annual:0}).balance)<1e-12);
-console.log('Budget math: 10 scenarios passed.');
+console.log('Budget math checks passed.');
