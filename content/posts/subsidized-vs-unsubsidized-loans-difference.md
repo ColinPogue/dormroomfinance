@@ -11,7 +11,7 @@ cover:
   caption: "Photo by RDNE Stock project on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 The central difference is responsibility for interest during eligible periods. Direct Subsidized Loans provide an interest benefit in qualifying circumstances, including eligible in-school enrollment. With Direct Unsubsidized Loans, borrowers are responsible for interest during all periods.

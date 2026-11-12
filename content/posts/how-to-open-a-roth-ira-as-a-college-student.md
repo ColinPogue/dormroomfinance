@@ -11,7 +11,7 @@ cover:
   caption: "Photo by Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 A Roth IRA is a type of retirement account, not an investment by itself. Opening one can be useful for eligible students, but the account must fit your cash needs and the tax rules.

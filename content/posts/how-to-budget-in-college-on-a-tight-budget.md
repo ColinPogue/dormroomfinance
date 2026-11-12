@@ -11,7 +11,7 @@ cover:
   caption: "Photo by www.kaboompics.com on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 A student budget should answer one question: can your dependable money cover the costs coming up? Start with actual numbers, not a percentage rule that assumes you have plenty of room.

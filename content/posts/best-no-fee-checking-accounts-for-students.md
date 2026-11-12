@@ -11,7 +11,7 @@ cover:
   caption: "Photo by cottonbro studio on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 No monthly maintenance fee does not mean no possible charges. Read the account's fee schedule before treating a checking account as free.

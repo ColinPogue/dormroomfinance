@@ -11,7 +11,7 @@ cover:
   caption: "Photo by Monstera Production on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 A refinance replaces existing debt with a new loan. Whether it is useful depends on the complete terms and the protections you would give up, not simply the advertised starting rate.

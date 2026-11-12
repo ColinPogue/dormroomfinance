@@ -11,7 +11,7 @@ cover:
   caption: "Photo by Tara Winstead on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 Graduation creates several financial transitions at once. A written checklist is more useful than trying to optimize every decision immediately.

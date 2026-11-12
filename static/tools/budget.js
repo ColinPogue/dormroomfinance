@@ -7,7 +7,7 @@
     }
     const expenses = ['housing','food','transport','bills','debt','flexible'].reduce((sum,key)=>sum+values[key],0);
     const monthlyIrregular = values.annual / 12;
-    return {income:values.income,expenses,monthlyIrregular,savings:values.savings,balance:values.income-expenses-monthlyIrregular-values.savings};
+    return {income:values.income,expenses,monthlyIrregular,savings:values.savings,balance:Math.round((values.income-expenses-monthlyIrregular-values.savings + Number.EPSILON)*100)/100 || 0};
   }
   if (typeof module !== 'undefined' && module.exports) module.exports = {calculate};
   if (typeof document === 'undefined') return;

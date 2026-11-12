@@ -6,7 +6,7 @@ categories: ["Credit Cards"]
 tags: ["student credit cards", "no annual fee", "build credit in college", "credit cards for beginners", "college finance"]
 draft: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 A $0 annual fee can be a useful starting filter for a first card. It does not mean the account has no costs: interest, late fees, and transaction fees may still apply.

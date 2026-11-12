@@ -11,7 +11,7 @@ cover:
   caption: "Photo by Aukid phumsirichat on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 **A student card describes a target applicant group; a secured card describes a collateral requirement.** The right choice depends on the actual offer and your finances, not which label sounds more advanced.

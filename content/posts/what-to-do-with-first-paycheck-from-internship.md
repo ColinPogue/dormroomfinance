@@ -11,7 +11,7 @@ cover:
   caption: "Photo by https://kaboompics.com/ on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 **Treat internship pay as temporary income with a job to do.** Before investing or upgrading your lifestyle, work out what it must cover until your next reliable paycheck.

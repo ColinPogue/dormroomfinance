@@ -11,7 +11,7 @@ cover:
   caption: "Photo by DΛVΞ GΛRCIΛ on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 **Do not use an old Freedom Student review as a current application guide.** Chase's current student guidance says it does not offer a dedicated student credit card and identifies Freedom Rise as an option for people new to credit.

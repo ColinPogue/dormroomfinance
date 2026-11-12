@@ -11,7 +11,7 @@ cover:
   caption: "Photo by George Pak on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 Ally is one online savings option to research. This is a source-based overview, not a hands-on product test or a claim that it pays the highest available rate.

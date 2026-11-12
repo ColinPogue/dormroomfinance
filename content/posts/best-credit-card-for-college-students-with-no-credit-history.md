@@ -11,7 +11,7 @@ cover:
   caption: "Photo by Leeloo The First on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 **Start with eligibility and repayment, then compare rewards.** Being a student does not guarantee approval. Having no credit history is also different from having negative information on your report.

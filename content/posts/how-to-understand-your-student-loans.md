@@ -11,7 +11,7 @@ cover:
   caption: "Photo by RDNE Stock project on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 Start with records rather than a repayment strategy. You need to know who holds each loan, what type it is, and what your agreement actually requires.

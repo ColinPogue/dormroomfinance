@@ -11,7 +11,7 @@ cover:
   caption: "Photo by RDNE Stock project on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 A claim that loans will be forgiven needs a specific program, eligibility rules, and a current official source. Do not treat a social post or an old article as confirmation that your own balance will be canceled.

@@ -11,7 +11,7 @@ cover:
   caption: "Photo by RDNE Stock project on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 This page is a decision checklist for someone considering Earnest or another private refinance lender. We have not verified a current personalized Earnest rate or tested an application, and this update does not rank Earnest against the full market.

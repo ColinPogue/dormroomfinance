@@ -11,7 +11,7 @@ cover:
   caption: "Photo by Leeloo The First on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 **Do not select a federal repayment plan from a static list in an old article.** Program rules, application availability, and legal developments can change. This guide explains how to gather the information needed for a current decision; it does not certify which plans you can enroll in today.

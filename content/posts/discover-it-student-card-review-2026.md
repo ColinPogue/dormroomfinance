@@ -11,7 +11,7 @@ cover:
   caption: "Photo by RDNE Stock project on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 A product review is only useful if the offer still matches what an applicant can get. Start at Discover's current card pages rather than treating an older review as an application offer.

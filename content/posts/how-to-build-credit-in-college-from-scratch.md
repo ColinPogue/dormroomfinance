@@ -6,7 +6,7 @@ categories: ["Credit Cards"]
 tags: ["build credit in college", "student credit cards", "credit score tips", "secured credit cards", "personal finance for students"]
 draft: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 Building credit starts with understanding what is reported about you and taking on only payments you can manage. You do not need several cards or interest charges to make the process meaningful.

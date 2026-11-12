@@ -11,7 +11,7 @@ cover:
   caption: "Photo by DΛVΞ GΛRCIΛ on Pexels"
   relative: false
 reviewed: 2026-11-12
-lastmod: 2026-11-12T12:00:00-06:00
+lastmod: 2026-11-12
 ---
 
 Capital One currently markets Savor Rewards for Students. This page keeps its original URL so existing links continue to work; the older SavorOne wording is not used as proof of a current offer.
