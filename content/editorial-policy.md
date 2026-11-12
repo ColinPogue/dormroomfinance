@@ -14,7 +14,7 @@ We prioritize eligibility, cost, risk, and usefulness to students over signup bo
 
 AI assists with drafting, editing, research organization, and website development. The older automated publishing process could generate unverified first-person stories and outdated product details. Articles from that process carry a visible archive notice until they receive a substantive update.
 
-Refreshed guides use clearly labeled hypothetical examples. They do not claim Colin personally used a product or experienced an event unless that experience has been confirmed. New articles are researched, generated, checked, and published automatically using AI. They are not individually reviewed by Colin before publication. Automated checks can miss errors; confirm important financial details with the linked official sources. No human approval is needed for the publishing schedule.
+Refreshed guides use clearly labeled hypothetical examples. They do not claim Colin personally used a product or experienced an event unless that experience has been confirmed. New articles are researched, generated, checked, and published automatically using AI. Automated checks can miss errors; confirm important financial details with the linked official sources.
 
 ## Corrections and changes
 

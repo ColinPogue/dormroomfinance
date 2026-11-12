@@ -2,3 +2,6 @@
 
 .post-content,.card-body,.editor-note{overflow-wrap:anywhere}
 #searchResults li a{display:block;padding:6px;font-size:18px;text-decoration:none}#searchResults li a:hover{text-decoration:underline}#searchbox label{display:block;font-size:14px;font-weight:650;margin-bottom:10px}#searchStatus{margin:12px 0 20px}
+.budget-form select{font:inherit;padding:8px 12px;border:1px solid #adb7a8;border-radius:4px;background:white;color:var(--ink)}.budget-form fieldset[hidden]{display:none}#roommate-summary{display:block;width:100%;max-width:100%;font:12px/1.7 ui-monospace,monospace;color:var(--ink);background:#f8f9f2;border:1px solid #b6c1ab;border-radius:4px;padding:12px;resize:vertical}.settlement-list{padding-left:20px;font-size:15px;line-height:1.8}.settlement-list li{margin-bottom:10px}
+
+.settlement-list{overflow-wrap:anywhere}

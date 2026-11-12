@@ -4,7 +4,7 @@ description: "How Dorm Room Finance handles website tools, contact messages, and
 ---
 ## Free tools
 
-The student budget calculator runs in your browser. It does not connect to your bank, transmit the numbers you enter, or save them to a server. Refreshing the page resets the form. Downloads are generated locally or served as static files. Do not enter account numbers or other sensitive information.
+The student budget calculator and roommate bill splitter run in your browser. They do not connect to your bank, transmit the numbers you enter, or save them to a server. Refreshing the page resets the form. Downloads are generated locally or served as static files. Do not enter account numbers or other sensitive information.
 
 ## Website hosting and external links
 

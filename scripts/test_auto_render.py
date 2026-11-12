@@ -23,7 +23,8 @@ This temporary fixture checks rendering and is never included in a public releas
   subprocess.run(['hugo','--source',str(ROOT),'--destination',tmp,'--minify'],check=True,capture_output=True)
   html=(Path(tmp)/'posts/drf-automatic-render-test/index.html').read_text()
   assert 'Published automatically.' in html
-  assert 'not individually reviewed before publication' in html
+  assert 'Articles use automated research and checks.' in html
+  assert 'not individually reviewed' not in html
   assert 'From the archive.' not in html
   assert html.count('<h1')==1
  print('Automatic article rendering and truthful disclosure passed.')

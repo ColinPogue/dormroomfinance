@@ -19,7 +19,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
    const page=await browser.newPage({viewport:{width,height:1000}});
    page.on('pageerror',e=>problems.push(e.message));
    page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)problems.push(`${r.status()} ${r.url()}`);});
-   for(const route of ['/','/start-here/','/tools/','/tools/student-budget/','/posts/best-credit-card-for-college-students-with-no-credit-history/','/categories/credit-cards/']){
+   for(const route of ['/','/start-here/','/tools/','/tools/student-budget/','/tools/roommate-bill-splitter/','/posts/best-credit-card-for-college-students-with-no-credit-history/','/categories/credit-cards/']){
     const response=await page.goto(base+route,{waitUntil:'networkidle'});assert.equal(response.status(),200);
     assert.equal(await page.locator('h1').count(),1,`one H1 on ${route}`);
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),`No horizontal overflow at ${width}: ${route}`);
@@ -45,12 +45,22 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
    await page.locator('#income').fill('1500');
    const downloadEvent=page.waitForEvent('download');await page.locator('#budget-download').click();
    const download=await downloadEvent;assert.equal(download.suggestedFilename(),'my-student-budget.csv');
+   await page.goto(base+'/tools/roommate-bill-splitter/',{waitUntil:'networkidle'});
+   await page.waitForFunction(()=>document.querySelector('#roommate-total').textContent==='$120.00');
+   assert.equal(await page.locator('#roommate-payments li').count(),2);
+   await page.locator('#roommate-count').selectOption('2');
+   await page.waitForFunction(()=>document.querySelector('#roommate-payments').textContent.includes('$30.00'));
+   await page.locator('#roommate-name-1').fill('Alex');
+   await page.waitForFunction(()=>document.querySelector('#roommate-error').textContent.includes('different'));
+   await page.locator('#roommate-name-1').fill('<b>Sam</b>');
+   assert.equal(await page.locator('#roommate-payments b').count(),0);
+   assert.ok((await page.locator('#roommate-summary').inputValue()).includes('<b>Sam</b>'));
    await page.goto(base+'/search/',{waitUntil:'networkidle'});
    await page.locator('#searchInput').fill('credit');
    await page.waitForFunction(()=>document.querySelectorAll('#searchResults li').length>0);
    await page.close();
   }
   assert.deepEqual(problems,[]);
-  console.log('Browser QA passed: 3 viewport sizes, navigation, 18 page loads, no overflow, images, search, calculator, invalid input, and downloads.');
+  console.log('Browser QA passed: 3 viewport sizes, navigation, 21 page loads, no overflow, images, search, calculators, invalid input, exact bill splits, safe names, and downloads.');
  } finally {if(browser)await browser.close();server.kill();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

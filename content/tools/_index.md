@@ -9,3 +9,7 @@ See what is left after essentials, savings, and the costs that do not happen eve
 ## Internship budget worksheet
 
 Plan for housing, moving costs, and the gap between your last paycheck and next semester. [Get the worksheet →](/tools/internship-budget/)
+
+## Roommate bill splitter
+
+Enter what everyone paid and calculate an equal split down to the cent. Copy a settlement summary without creating an account. [Split the bills →](/tools/roommate-bill-splitter/)

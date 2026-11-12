@@ -48,6 +48,7 @@ jobs:
           /tmp/drf-python/bin/python scripts/test_automatic.py
           python3 scripts/test_auto_render.py
           node scripts/test_budget.cjs
+          node scripts/test_roommates.cjs
 
       - name: Install browser validation tools
         run: |

@@ -15,7 +15,7 @@ Practical guides, worked examples, and free tools for students and new graduates
 
 ## How the site is made
 
-AI helps with research organization, drafting, editing, and development. New articles are researched, generated, checked, and published automatically three times a week. They are not individually reviewed by Colin before publication. Earlier versions of the site published AI-generated articles automatically, including personal anecdotes that were not individually verified. Those articles are labeled as archive content while they are reviewed. Refreshed guides remove unverified anecdotes and include source notes.
+AI helps with research organization, drafting, editing, and development. New articles are researched, generated, checked, and published automatically three times a week. Earlier versions of the site published AI-generated articles automatically, including personal anecdotes that were not individually verified. Those articles are labeled as archive content while they are reviewed. Refreshed guides remove unverified anecdotes and include source notes.
 
 I am not a financial advisor. This site does not provide individualized investment, tax, legal, or lending advice. You can read the [editorial standards](/editorial-policy/) for our sourcing and corrections approach.
 

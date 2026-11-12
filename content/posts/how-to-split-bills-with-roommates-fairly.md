@@ -12,6 +12,9 @@ cover:
   relative: false
 ---
 
+**Try the free tool:** [Use the roommate bill splitter](/tools/roommate-bill-splitter/) to calculate an equal split and see who owes whom. No signup required.
+
+
 
 *I'm not a financial advisor, just a business student sharing what I've learned. Do your own research before making financial decisions.*
 
