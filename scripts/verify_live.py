@@ -12,6 +12,7 @@ checks={
  '/robots.txt':'Sitemap: https://dormroomfinance.com/sitemap.xml',
  '/sitemap.xml':'https://dormroomfinance.com/',
  '/tools/budget.js':'monthlyIrregular',
+ '/drf-mark-v2-32.png':bytes([137,80,78,71,13,10,26,10]),
  '/editorial-policy/':'New articles are researched, generated, checked, and published automatically using AI.',
 }
 last=None
@@ -21,11 +22,12 @@ for attempt in range(12):
    request=Request('https://dormroomfinance.com'+path+'?release=20261112',headers={'User-Agent':'DormRoomFinance-Release-Check/1.0','Cache-Control':'no-cache'})
    with urlopen(request,timeout=20) as response:
     assert response.status==200,(path,response.status)
-    content=response.read().decode('utf-8')
+    payload=response.read()
+    content=payload if isinstance(expected,bytes) else payload.decode('utf-8')
    assert expected in content,(path,'expected release content missing')
    if path.endswith('/'):
     assert '2026-11-12-makeover-v1' in content,(path,'release marker missing')
-  print('Live custom-domain checks passed: all 10 URLs returned HTTP 200 with expected content.')
+  print('Live custom-domain checks passed: all 11 URLs returned HTTP 200 with expected content.')
   break
  except Exception as error:
   last=error

@@ -87,3 +87,9 @@ enableRobotsTXT = true
   name = "Search"
   url = "/search/"
   weight = 50
+
+[params.assets]
+  favicon = "/drf-mark-v2.ico"
+  favicon16x16 = "/drf-mark-v2-16.png"
+  favicon32x32 = "/drf-mark-v2-32.png"
+  apple_touch_icon = "/drf-mark-v2-180.png"
