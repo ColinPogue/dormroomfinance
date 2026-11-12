@@ -18,3 +18,6 @@ research/
 .refreshed.json
 .release*.json
 qa-screenshots/
+automation/.publish.lock
+automation/pending_article.json
+exports/

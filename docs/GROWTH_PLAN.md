@@ -24,8 +24,10 @@ Preserve all 100 original article URLs and original publication dates. Do not re
 2. Export Pages and Queries with impressions, clicks, CTR, and position. Record indexed/not-indexed reasons separately. Inspect the homepage and priority first-card URL, including Google's selected canonical and last crawl.
 3. Check Manual Actions and Security Issues before attributing the drop to content quality. Compare the affected pages rather than assuming a site-wide problem.
 4. Review priority pages monthly. Rising impressions and improving positions are useful early indicators; CTR must be interpreted alongside position and query mix. Averages across different query populations can mislead.
-5. Prioritize useful updates on pages with relevant impressions and achievable rankings. Do not resume random-volume publishing merely because a calendar date arrives.
+5. Prioritize useful updates on pages with relevant impressions and achievable rankings. The user requires automatic publishing three times a week. Keep it useful and source-backed; the operator does not review individual articles.
 6. Continue the remaining archive review, starting with product offers, repayment guidance, tax claims, and unsupported anecdotes. Keep verified experiences distinct from illustrative examples.
+
+The operator’s goal is hands-off audience growth followed by advertising monetization. Automatic posting alone does not establish traffic, approval by an ad network, or income. No ad network has been connected.
 
 No tracker or newsletter provider has been added. Search Console supplies search performance; it does not measure all website visits, calculator usage, or conversions. If those measurements are needed later, select a privacy-conscious measurement plan and update the policy for the actual implementation.
 

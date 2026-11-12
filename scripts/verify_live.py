@@ -11,6 +11,7 @@ checks={
  '/robots.txt':'Sitemap: https://dormroomfinance.com/sitemap.xml',
  '/sitemap.xml':'https://dormroomfinance.com/',
  '/tools/budget.js':'monthlyIrregular',
+ '/editorial-policy/':'New articles are researched, generated, checked, and published automatically using AI.',
 }
 last=None
 for attempt in range(12):
@@ -23,7 +24,7 @@ for attempt in range(12):
    assert expected in content,(path,'expected release content missing')
    if path.endswith('/'):
     assert '2026-11-12-makeover-v1' in content,(path,'release marker missing')
-  print('Live custom-domain checks passed: all 8 URLs returned HTTP 200 with expected content.')
+  print('Live custom-domain checks passed: all 9 URLs returned HTTP 200 with expected content.')
   break
  except Exception as error:
   last=error
