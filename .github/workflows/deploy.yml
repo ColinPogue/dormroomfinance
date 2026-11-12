@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, makeover-2026-11-12]
   workflow_dispatch:
 
 permissions:
@@ -26,11 +26,38 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.157.0"
           extended: true
 
       - name: Build site
         run: hugo --minify
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check generated site and financial examples
+        run: |
+          python3 scripts/validate_site.py
+          python3 scripts/test_research.py
+          node scripts/test_budget.cjs
+
+      - name: Install browser validation tools
+        run: |
+          npm install --prefix /tmp/drf-browser playwright@1.56.1
+          /tmp/drf-browser/node_modules/.bin/playwright install --with-deps chromium
+
+      - name: Validate mobile and desktop behavior
+        env:
+          NODE_PATH: /tmp/drf-browser/node_modules
+        run: node scripts/browser_smoke.cjs
+
+      - name: Save QA screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: makeover-browser-screenshots
+          path: qa-screenshots/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -38,6 +65,7 @@ jobs:
           path: ./public
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

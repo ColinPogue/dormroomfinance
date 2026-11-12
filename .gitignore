@@ -5,3 +5,16 @@ resources/
 automation/run.log
 automation/error.log
 automation/last_run.json
+
+.DS_Store
+__pycache__/
+editorial-drafts/
+research/
+.baseline.json
+.remote-tree.json
+.fetch-queue.json
+.batch*.json
+.retry.json
+.refreshed.json
+.release*.json
+qa-screenshots/

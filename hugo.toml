@@ -2,23 +2,27 @@ baseURL = "https://dormroomfinance.com/"
 languageCode = "en-us"
 title = "Dorm Room Finance"
 theme = "PaperMod"
-paginate = 4
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 12
 
 [params]
   env = "production"
   title = "Dorm Room Finance"
-  description = "Real money advice from a real college student. Budgeting, investing, credit cards, and side hustles — written by a business student figuring it out."
+  description = "Practical money guides for college students and new grads. Build credit, plan your spending, and make your first paycheck count."
   keywords = ["college finance", "student money", "budgeting in college", "investing for college students", "student credit cards"]
-  author = "Colin"
+  author = "Colin Pogue"
+  mainSections = ["posts"]
   DateFormat = "January 2, 2006"
   defaultTheme = "light"
-  disableThemeToggle = false
+  disableThemeToggle = true
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  showtoc = false
+  showtoc = true
   tocopen = false
 
   [params.homeInfoParams]
@@ -64,3 +68,22 @@ paginate = 4
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 2
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  identifier = "start"
+  name = "Start here"
+  url = "/start-here/"
+  weight = 1
+[[menu.main]]
+  identifier = "tools"
+  name = "Free tools"
+  url = "/tools/"
+  weight = 15
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 50

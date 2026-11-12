@@ -53,7 +53,7 @@ DoorDash drivers report earning roughly $15 to $25 per hour before expenses in m
 
 The honest answer is that neither platform is dramatically better on raw pay. The platform that pays more for you depends almost entirely on your market and when you work. If you're in a college town or suburban area, DoorDash typically has higher order volume. If you're in a major city with dense restaurant clusters, Uber Eats surge pricing can give you a real edge.
 
-If delivery doesn't fit your schedule, there are other ways to build income as a student. I've written before about [how to flip items for profit as a college student](/posts/how-to-flip-items-for-profit-as-a-college-student/) and [how to make money on Fiverr](/posts/how-to-make-money-on-fiverr-as-a-college-student/) if you want something you can do without leaving your apartment.
+If delivery doesn't fit your schedule, there are other ways to build income as a student. I've written before about [how to flip items for profit as a college student](/posts/how-to-flip-items-for-profit-as-a-college-student/) and [how to make money on Fiverr](/posts/how-to-make-money-on-fiverr-as-a-student/) if you want something you can do without leaving your apartment.
 
 ## How to Choose Between Them
 

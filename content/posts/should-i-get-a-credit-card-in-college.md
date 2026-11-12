@@ -14,7 +14,6 @@ I'm not a financial advisor — just a business student sharing what I've learne
 
 ---
 
-# Should I Get a Credit Card in College? An Honest Take From a Broke Junior
 
 Here's the question I get asked constantly by freshmen and sophomores in my dorm hallway: *"Should I actually get a credit card right now?"*
 
